@@ -12,6 +12,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: hello-world-dev
+  helm:
+    valueFiles:
+      - ../../apps/hello-world/values.yaml
   syncPolicy:
     automated:
       prune: true
