@@ -4,17 +4,17 @@ metadata:
   name: hello-world-dev
   namespace: argocd
 spec:
-  project: hello-world
+  project: default
   source:
     repoURL: https://github.com/nguyenthengocdev/dev-kubernetes.git
-    targetRevision: HEAD
-    path: envs/dev/hello-world
+    targetRevision: main
+    path: apps/hello-world
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: hello-world-dev
-  helm:
-    valueFiles:
-      - ../../apps/hello-world/values.yaml
   syncPolicy:
     automated:
       prune: true
