@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-dev
+  name: test
   namespace: argocd
 spec:
   project: default
@@ -15,7 +15,7 @@ spec:
         - prod-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: hello-world-dev
+    namespace: test
   syncPolicy:
     automated:
       prune: true
