@@ -1,11 +1,11 @@
+nameOverride: "test-app"
+
 image:
   repository: ealen/echo-server
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
-
-fullnameOverride: "test-service"
 
 service:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
