@@ -15,7 +15,7 @@ spec:
         - dev2-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: test-app
+    namespace: dev-app
   syncPolicy:
     automated:
       prune: true
