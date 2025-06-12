@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/nguyenthengocdev/dev-kubernetes.git
     targetRevision: main
-    path: envs/dev/prod
+    path: envs/prod
     directory:
       recurse: true
   destination:
