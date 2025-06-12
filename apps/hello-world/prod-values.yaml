@@ -1,4 +1,4 @@
-nameOverride: "test-app"
+fullnameOverride: "test-app"
 
 image:
   repository: ealen/echo-server

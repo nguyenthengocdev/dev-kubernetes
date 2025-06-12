@@ -15,7 +15,7 @@ spec:
         - prod-values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: hello-world-dev
+    namespace: test-app
   syncPolicy:
     automated:
       prune: true

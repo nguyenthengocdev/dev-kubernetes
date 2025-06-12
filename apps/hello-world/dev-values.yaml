@@ -1,4 +1,4 @@
-nameOverride: "hello-world-app"
+fullnameOverride: "hello-world-app"
 
 image:
   repository: testcontainers/helloworld
